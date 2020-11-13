@@ -35,14 +35,14 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__logo">
-            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+            <a href="/welcome/"><img src="{% static 'img/logo.png' %}" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
     </div>
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    <header class="header header-normal set-bg" data-setbg="{% static 'img/little-header.jpg' %}">
+    <header class="header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
@@ -55,7 +55,7 @@
                         <ul>
                             <li><a href="/welcome/">Home</a></li>
                             <li><a href="/contents/about/">About</a></li>
-                            <li><a href="/contents/model/">Model</a>
+                            <li class="active"><a href="/contents/model/">Model</a>
 <!--                                <ul class="dropdown">-->
 <!--                                    <li><a href="./Project-details.html">Logistic Regression</a></li>-->
 <!--                                    <li><a href="./about.html">KNN</a></li>-->
@@ -73,7 +73,7 @@
                                 </ul>
                             </li>
 <!--                            <li><a href="./blog.html">Blog</a></li>-->
-                            <li class="active"><a href="/contents/team/">Team</a></li>
+                            <li><a href="/contents/team/">Team</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -83,144 +83,85 @@
     </header>
     <!-- Header Section End -->
 
-    <section class="testimonial spad set-bg" data-setbg="{% static 'img/testimonial/testimonial-bg.jpg' %}">
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg' %}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <span>Data.M</span>
-                        <h2>Introduce Our Team</h2>
+                    <div class="breadcrumb__text">
+                        <h2>Used Models</h2>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- About Page Section Begin -->
+    <section class="about-page spad">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial__carousel">
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-xl-9 col-lg-10">
-                                    <p>“1. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="about__text about__page__text">
+                        <div class="section-title">
+                            <span>who are we</span>
+                            <h2>About Us</h2>
                         </div>
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-xl-9 col-lg-10">
-                                    <p>“2. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-xl-9 col-lg-10">
-                                    <p>“3. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-xl-9 col-lg-10">
-                                    <p>“4. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-lg-9">
-                                    <p>“5. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
-                                </div>
-                            </div>
+                        <div class="about__para__text">
+                            <p>As you might expect of a company that began as a high-end interiors contractor.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-6 col-lg-8 col-md-7 col-sm-10 ">
-                    <div class="testimonial__client">
-                        <div class="testimonial__client__item add">
-                            <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-1.png' %}" alt="">
-                            </div>
-                            <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
-                            </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="about__page__services">
+                        <div class="about__page__services__text">
+                            <p>Metasurfaces are generally designed by placing scatterers in periodic or pseudo-periodic
+                                grids. We propose and discuss design rules for functional metasurfaces with randomly
+                            placed. Anisotropic elements that randomly sample. Quisque sit amet nisl ante.</p>
                         </div>
-                        <div class="testimonial__client__item">
-                            <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-2.png' %}" alt="">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-5.png' %}" alt="">
+                                    <h4>Our Mission</h4>
+                                    <p>As you might expect of a company that began as a high-end interiors contractor,
+                                    we pay strict attention. Anisotropic elements that randomly sample.</p>
+                                </div>
                             </div>
-                            <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-6.png' %}" alt="">
+                                    <h4>Our Vision</h4>
+                                    <p>Our commitment to exceptional quality has never wavered. To day ranks as one of
+                                        the most highly-regarded construction. Anisotropic elements that randomly
+                                    sample.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="testimonial__client__item">
-                            <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-3.png' %}" alt="">
-                            </div>
-                            <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
-                            </div>
-                        </div>
-                        <div class="testimonial__client__item">
-                            <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-4.png' %}" alt="">
-                            </div>
-                            <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
-                            </div>
-                        </div>
-                        <div class="testimonial__client__item">
-                            <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-5.png' %}" alt="">
-                            </div>
-                            <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="logo__carousel owl-carousel">
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-1.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-2.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-3.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-4.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-5.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-3.png' %}" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- About Page Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="{% static 'img/call-bg.jpg' %}">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="callto__text">
+                        <span>Why choose us?</span>
+                        <h2>Our ability to bring outstanding results to our customers.</h2>
+                        <a href="#" class="primary-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Team Section Begin -->
     <section class="team spad">
         <div class="container">
             <div class="row">
@@ -294,6 +235,8 @@
             </div>
         </div>
     </section>
+    <!-- Team Section End -->
+
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
         <div class="container">

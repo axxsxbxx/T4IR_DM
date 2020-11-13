@@ -21,8 +21,9 @@ import contents.views
 from django.conf import settings
 
 urlpatterns = [
-    # path('contents/', include('contents.urls')),
+    path('contents/', include('contents.urls')),
     path('admin/', admin.site.urls),
-    path('', views.welcome, name='welcome')
+    path('', views.welcome, name='welcome'),
+    path('welcome/', views.welcome, name="welcome"),
 ]
 urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
