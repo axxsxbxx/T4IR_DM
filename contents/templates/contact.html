@@ -38,10 +38,6 @@
             <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__widget">
-            <span>Call us for any questions</span>
-            <h4>+01 123 456 789</h4>
-        </div>
     </div>
     <!-- Offcanvas Menu End -->
 
@@ -51,33 +47,35 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                        <a href="/welcome/"><img src="{% static 'img/logo.png' %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./projects.html">Projects</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="#">Pages</a>
+                            <li><a href="/welcome/">Home</a></li>
+                            <li><a href="/contents/about/">About</a></li>
+                            <li><a href="/contents/model/">Model</a>
+<!--                                <ul class="dropdown">-->
+<!--                                    <li><a href="./Project-details.html">Logistic Regression</a></li>-->
+<!--                                    <li><a href="./about.html">KNN</a></li>-->
+<!--                                    <li><a href="./services.html">Random Forest</a></li>-->
+<!--                                    <li><a href="./blog-details.html">ADA Boost</a></li>-->
+<!--                                    <li><a href="./blog-details.html">XGBoost</a></li>-->
+<!--                                </ul>-->
+                            </li>
+                            <li><a href="#">Result</a>
                                 <ul class="dropdown">
-                                    <li><a href="./Project-details.html">Project Details</a></li>
-                                    <li><a href="./about.html">About</a></li>
-                                    <li><a href="./services.html">Services</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="/contents/group1/">Group1</a></li>
+                                    <li><a href="/contents/group2/">Group2</a></li>
+                                    <li><a href="/contents/group3/">Group3</a></li>
+                                    <li><a href="/contents/group4/">Group4</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li class="active"><a href="./contact.html">Contact</a></li>
+<!--                            <li><a href="./blog.html">Blog</a></li>-->
+                            <li class="active"><a href="/contents/team/">Team</a></li>
                         </ul>
                     </nav>
-                </div>
-                <div class="col-lg-3">
-                    <div class="header__widget">
-                        <span>Call us for any questions</span>
-                        <h4>+01 123 456 789</h4>
-                    </div>
                 </div>
             </div>
             <div class="canvas__open"><i class="fa fa-bars"></i></div>
@@ -85,97 +83,217 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Contact Section Begin -->
-    <section class="contact spad">
+    <section class="testimonial spad set-bg" data-setbg="{% static 'img/testimonial/testimonial-bg.jpg' %}">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="contact__text">
-                        <div class="section-title">
-                            <span>Information</span>
-                            <h2>Contact Details</h2>
-                        </div>
-                        <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict
-                        attention.</p>
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <span>Data.M</span>
+                        <h2>Introduce Our Team</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="contact__widget__item">
-                        <div class="contact__widget__item__icon">
-                            <img src="{% static 'img/contact/ci-1.png' %}" alt="">
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h5>Phone Number</h5>
-                            <span>+01 123 456 789</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="contact__widget__item">
-                        <div class="contact__widget__item__icon">
-                            <img src="{% static 'img/contact/ci-2.png' %}" alt="">
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h5>Email Address</h5>
-                            <span>info.colorlib@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="contact__widget__item last__item">
-                        <div class="contact__widget__item__icon">
-                            <img src="{% static 'img/contact/ci-3.png' %}" alt="">
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h5>Office Location</h5>
-                            <span>7176 Blue Spring Lane, NY, US</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="map">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12087.069761554938!2d-74.2175599360452!3d40.767139456514954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254b5958982c3%3A0xb6ab3931055a2612!2sEast%20Orange%2C%20NJ%2C%20USA!5e0!3m2!1sen!2sbd!4v1581710470843!5m2!1sen!2sbd"
-                height="460" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="contact__form__text">
-                        <div class="section-title">
-                            <span>Form</span>
-                            <h2>Get in touch</h2>
-                        </div>
-                        <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict
-                        attention.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact__form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
-                                    <button type="submit" class="site-btn">Send Message</button>
+                <div class="col-lg-12">
+                    <div class="testimonial__carousel">
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“1. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“2. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“3. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“4. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-9">
+                                    <p>“5. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-7 col-sm-10 ">
+                    <div class="testimonial__client">
+                        <div class="testimonial__client__item add">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/ta-1.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/ta-2.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/ta-3.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/ta-4.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{% static 'img/testimonial/ta-5.png' %}" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo__carousel owl-carousel">
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{% static 'img/logo/logo-1.png' %}" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{% static 'img/logo/logo-2.png' %}" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{% static 'img/logo/logo-3.png' %}" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{% static 'img/logo/logo-4.png' %}" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{% static 'img/logo/logo-5.png' %}" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{% static 'img/logo/logo-3.png' %}" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
-
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-6">
+                    <div class="section-title">
+                        <span>Our Team</span>
+                        <h2>Meet our team</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn normal-btn">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/team-1.jpg' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Dolores Webster</h5>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                            ultricies nisl sit amet.</p>
+                            <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/team-2.jpg' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Dana Vaughn</h5>
+                                <span>Architect</span>
+                            </div>
+                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                            ultricies nisl sit amet.</p>
+                            <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/team-3.jpg' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Jonathan Mcdaniel</h5>
+                                <span>Architect</span>
+                            </div>
+                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                            ultricies nisl sit amet.</p>
+                            <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
         <div class="container">
