@@ -9,3 +9,15 @@ def team(request):
 
 def model(request):
     return render(request, "model.html")
+
+def group1(request):
+    return render(request, "group1.html")
+
+def group2(request):
+    return render(request, "group2.html")
+
+def group3(request):
+    return render(request, "group3.html")
+
+def group4(request):
+    return render(request, "group4.html")
