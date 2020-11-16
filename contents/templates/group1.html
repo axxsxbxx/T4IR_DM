@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 </head>
 
+<!--<body style="text-align:center; vertical-align:center">-->
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
@@ -35,14 +36,14 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__logo">
-            <a href="/welcome/"><img src="{% static 'img/logo.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
     </div>
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
+    <header class="header header-normal set-bg" data-setbg="{% static 'img/little-header.jpg' %}">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
@@ -57,11 +58,11 @@
                             <li><a href="/contents/about/">About</a></li>
                             <li><a href="/contents/model/">Model</a>
                                 <ul class="dropdown">
-                                    <li><a href="./Project-details.html">Logistic Regression</a></li>
-                                    <li><a href="./about.html">KNN</a></li>
-                                    <li><a href="./services.html">Random Forest</a></li>
-                                    <li><a href="./blog-details.html">ADA Boost</a></li>
-                                    <li><a href="./blog-details.html">XGBoost</a></li>
+                                    <li><a href="/contents/logistic/">Logistic Regression</a></li>
+                                    <li><a href="/contents/knn/">KNN</a></li>
+                                    <li><a href="/contents/randomforest/">Random Forest</a></li>
+                                    <li><a href="/contents/ada/">ADA Boost</a></li>
+                                    <li><a href="/contents/xgb/">XGBoost</a></li>
                                 </ul>
                             </li>
                             <li class="active"><a href="#">Result</a>
@@ -72,7 +73,6 @@
                                     <li><a href="/contents/group4/">Group4</a></li>
                                 </ul>
                             </li>
-<!--                            <li><a href="./blog.html">Blog</a></li>-->
                             <li><a href="/contents/team/">Team</a></li>
                         </ul>
                     </nav>
@@ -83,70 +83,136 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Breadcrumb Section Begin -->
-    <div class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg' %}">
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Group1</h2>
-                        <div class="breadcrumb__links">
-                            <span>group1 설명---</span>
+            <div class="col-lg-10">
+                <div class="blog__details__content">
+                    <div class="blog__details__title">
+                        <ul>
+                            <li>result </li>
+                            <li>Group1</li>
+                        </ul>
+                        <h3>GROUP1</h3>
+                    </div>
+                    <div class="col-lg-8 col-md-8" style="margin:0 25%">
+                        <div class="about__page__services">
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="services__item">
+                                        <img src="{% static 'img/services/services-5.png' %}" alt="">
+                                        <h4>Target</h4>
+                                        <p>낮은 요금제를 사용하고<br> 가입 기간이 짧은 고객</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="services__item">
+                                        <img src="{% static 'img/services/services-6.png' %}" alt="">
+                                        <h4>Feature</h4>
+                                        <p> 평균요금 : 3.9 만원<br>
+                                            평균기간 : 9.8 개월<br>
+                                            데이터 표본수 : 2042 명</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="counter__content">
+                        <h3><span style="font-weight:bold">Analysis Result</span></h3><hr>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="counter__item">
+                                    <div class="counter__item__number">
+                                        <h2 class="count">59</h2>
+                                    </div>
+                                    <div class="counter__item__text">
+                                        <h5>ACCURACY<br>%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="counter__item">
+                                    <div class="counter__item__number">
+                                        <h2 class="count">40</h2>
+                                    </div>
+                                    <div class="counter__item__text">
+                                        <h5>PRECISION<br>%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="counter__item">
+                                    <div class="counter__item__number">
+                                        <h2 class="count">86</h2>
+                                    </div>
+                                    <div class="counter__item__text">
+                                        <h5>RECALL<br>%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="counter__item">
+                                    <div class="counter__item__number">
+                                        <h2 class="count">54</h2>
+                                    </div>
+                                    <div class="counter__item__text">
+                                        <h5>F1 SCORE<br>%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><hr>
+                    <div>
+                        <p style="margin:0 0 0 200px">
+                            <img src="{% static 'img/project/result1212.png' %}" alt="" width="65%" ><br>
+                        <p style="margin:0 0 100px 250px">
+                            Recall 오류 : 이탈할 고객을 이탈하지 않는다고 잘못 판단한 오류<br>
+                            Precision 오류 : 이탈하지 않을 고객을 이탈한다고 잘못 판단한 오류<br><br>
+                            Recall 오류에 따른 손해 : 10,888 만원<br>
+                            Precision 오류에 따른 손해 : 6,152 만원</p>
+                    </div>
+                    <h3><span style="font-weight:bold">Marketing Strategy</span></h3><hr>
+
+            <section class="services services-page spad">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <img src="{% static 'img/customer.png' %}" alt="" width="60">
+                                <h4>신규고객 창출</h4>
+                                <p>신규고객 창출과 같은 공격적 마케팅 진행.<br>
+                                   고객 접촉방법은 주로 DM을 통한 브랜드 홍보 및 안내책자를 제공.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <img src="{% static 'img/no-phone.png' %}" alt="" width="60">
+                                <h4>TM</h4>
+                                <p>콜센터와같은 인입전화의 TM은 <br>거부감을 높일 수 있으니 시행하지않는다</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <img src="{% static 'img/services/services-4.png' %}" alt="">
+                                <h4>정기적 설문조사</h4>
+                                <p>정기적 설문조사를 6개월에 1회 실시.<br>
+                                   고객의 불만,이슈,제안사항등을 수집.<br></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <h3><span style="font-weight:bold">Promotion</span></h3><hr>
+                    <div class="services__item">
+                                <img src="{% static 'img/promotion1.png' %}" alt="" style="margin:5% 15%">
+                    </div>
         </div>
-    </div>
-    <!-- Breadcrumb Section End -->
-
-    <!-- Project Page Section Begin -->
-    <section class="project-page spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="project__item">
-                        <img src="{% static 'img/project/project-p1.jpg' %}" alt="">
-                        <h4><a href="#">Office Building</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="project__item">
-                        <img src="{% static 'img/project/project-p2.jpg' %}" alt="">
-                        <h4><a href="#">Funiture Decorative</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="project__item">
-                        <img src="{% static 'img/project/project-p3.jpg' %}" alt="">
-                        <h4><a href="#">Interior Design</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="project__item">
-                        <img src="{% static 'img/project/project-p4.jpg' %}" alt="">
-                        <h4><a href="#">Home Building</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="project__item">
-                        <img src="{% static 'img/project/project-p5.jpg' %}" alt="">
-                        <h4><a href="#">Decoration</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="project__item">
-                        <img src="{% static 'img/project/project-p6.jpg' %}" alt="">
-                        <h4><a href="#">Funiture</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <a href="#" class="primary-btn normal-btn">Load More</a>
-                </div>
             </div>
         </div>
     </section>
-    <!-- Project Page Section End -->
+    <!-- Blog Details Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">

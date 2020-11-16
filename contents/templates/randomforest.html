@@ -55,7 +55,7 @@
                         <ul>
                             <li><a href="/welcome/">Home</a></li>
                             <li><a href="/contents/about/">About</a></li>
-                            <li class="active"><a href="/contents/model/">Model</a>
+                            <li class="active"><a href="#">Model</a>
                                 <ul class="dropdown">
                                     <li><a href="/contents/logistic/">Logistic Regression</a></li>
                                     <li><a href="/contents/knn/">KNN</a></li>
@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Final Model</h2>
+                        <h2>Random Forest</h2>
                     </div>
                 </div>
             </div>
@@ -104,23 +104,46 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="about__text about__page__text">
                         <div class="section-title">
-                            <span>Final Model</span>
-                            <h2>XGBoost</h2>
+                            <span>Model 3</span>
+                            <h2>Random Forest</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
                     <div class="about__page__services">
+                        <div class="about__page__services__text">
+                            <p>랜덤 포레스트는 대표적인 bagging 모델으로, 여러개의 결정 트리들을 랜덤하게 학습시켜 결과 도출에 사용한다.
+                            모델 내부에 트리를 만들기 위해서 중복을 허용한 샘플(부트스트랩 샘플)들을 생성한다.</p>
+                        </div>
                         <div class="row">
-                            <div style="vertical-align:center">
-                                <hr>
-                                <h3 style="text-align:center;color:#FA7A35">PR Curve Comparison</h3>
-                                <img src="{% static 'img/prcurve.png' %}">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-5.png' %}" alt="">
+                                    <h4>Parameter</h4>
+                                    <p>test_size=0.2<br>n_estimators=500<br>max_leaf_nodes=30<br>max_depth=10</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-6.png' %}" alt="">
+                                    <h4>Feature</h4>
+                                    <p>oob샘플(out-of-bag;부트스트랩 샘플링 시 선택되지 않은 샘플)의 정확도까지 구할 수 있다.</p>
+                                </div>
                             </div>
                             <div style="vertical-align:center">
                                 <hr>
-                                <h3 style="text-align:center;color:#FA7A35">F1 Score Comparison</h3><br>
-                                <img src="{% static 'img/fscore.png' %}">
+                                <h3 style="text-align:center;color:#FA7A35">Confusion Matrix</h3>
+                                <img src="{% static 'img/rfmat.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">Classification Report</h3>
+                                <img src="{% static 'img/rf_report.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">PR Curve</h3>
+                                <img src="{% static 'img/rf_pr.png' %}">
                             </div>
 
                         </div>

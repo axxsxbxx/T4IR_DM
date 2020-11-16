@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Final Model</h2>
+                        <h2>Logistic Regression</h2>
                     </div>
                 </div>
             </div>
@@ -104,23 +104,47 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="about__text about__page__text">
                         <div class="section-title">
-                            <span>Final Model</span>
-                            <h2>XGBoost</h2>
+                            <span>Model 1</span>
+                            <h2>Logistic Regression</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
                     <div class="about__page__services">
+                        <div class="about__page__services__text">
+                            <p>독립 변수의 선형 결합을 이용하여 사건의 발생 가능성을 예측하는데 사용되는 모델이다.
+                            종속 변수가 범주형 데이터를 대상으로 하며 입력 데이터가 주어졌을 때 해당 데이터의 결과가 특정 분류로 나뉘기 때문에
+                                일종의 분류(Classification) 기법이다.</p>
+                        </div>
                         <div class="row">
-                            <div style="vertical-align:center">
-                                <hr>
-                                <h3 style="text-align:center;color:#FA7A35">PR Curve Comparison</h3>
-                                <img src="{% static 'img/prcurve.png' %}">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-5.png' %}" alt="">
+                                    <h4>Purpose</h4>
+                                    <p>일반 회귀 분석의 목표와 동일하게 종속 변수와 독립 변수간의 관계를 구체적 함수로 나타내 향후 예측 모델에 사용한다.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-6.png' %}" alt="">
+                                    <h4>Feature</h4>
+                                    <p>주로 종속변수가 이항형인 문제를 지칭할 때 쓰인다.</p>
+                                </div>
                             </div>
                             <div style="vertical-align:center">
                                 <hr>
-                                <h3 style="text-align:center;color:#FA7A35">F1 Score Comparison</h3><br>
-                                <img src="{% static 'img/fscore.png' %}">
+                                <h3 style="text-align:center;color:#FA7A35">Confusion Matrix</h3>
+                                <img src="{% static 'img/logmat.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">Classification Report</h3>
+                                <img src="{% static 'img/log_report.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">PR Curve</h3>
+                                <img src="{% static 'img/log_pr.png' %}">
                             </div>
 
                         </div>

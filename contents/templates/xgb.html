@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Final Model</h2>
+                        <h2>XGBoost</h2>
                     </div>
                 </div>
             </div>
@@ -104,25 +104,49 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="about__text about__page__text">
                         <div class="section-title">
-                            <span>Final Model</span>
+                            <span>Model 5</span>
                             <h2>XGBoost</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
                     <div class="about__page__services">
+                        <div class="about__page__services__text">
+                            <p>기본적으로 boosting 기술을 사용하는 알고리즘이다.
+                                XGBoost는 트리를 만들 때 CART(Classification And Regression Trees)라는 알고리즘을 사용하며
+                                트리 기반의 앙상블 학습에서 각광 받고 있는 알고리즘 중 하나이다. </p>
+                        </div>
                         <div class="row">
-                            <div style="vertical-align:center">
-                                <hr>
-                                <h3 style="text-align:center;color:#FA7A35">PR Curve Comparison</h3>
-                                <img src="{% static 'img/prcurve.png' %}">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-5.png' %}" alt="">
+                                    <h4>Parameter</h4>
+                                    <p>learning_rate=0.2<br>n_estimators=500<br>early_stopping_rounds = 100<br>max_depth=5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-6.png' %}" alt="">
+                                    <h4>Feature</h4>
+                                    <p>분류에 있어서 일반적으로 다른 머신러닝보다 뛰어난 예측 성능을 나타낸다.
+                                    과적합(overfitting) 방지가 가능한 규제가 포함되어 있으며 조기 종료를 제공한다.</p>
+                                </div>
                             </div>
                             <div style="vertical-align:center">
                                 <hr>
-                                <h3 style="text-align:center;color:#FA7A35">F1 Score Comparison</h3><br>
-                                <img src="{% static 'img/fscore.png' %}">
+                                <h3 style="text-align:center;color:#FA7A35">Confusion Matrix</h3>
+                                <img src="{% static 'img/xgbmat.png' %}">
                             </div>
-
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">Classification Report</h3>
+                                <img src="{% static 'img/xgb_report.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">PR Curve</h3>
+                                <img src="{% static 'img/xgb_pr.png' %}">
+                            </div>
                         </div>
                     </div>
                 </div>

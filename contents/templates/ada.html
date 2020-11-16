@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Final Model</h2>
+                        <h2>ADA Boost</h2>
                     </div>
                 </div>
             </div>
@@ -104,23 +104,48 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="about__text about__page__text">
                         <div class="section-title">
-                            <span>Final Model</span>
-                            <h2>XGBoost</h2>
+                            <span>Model 4</span>
+                            <h2>ADA Boost</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
                     <div class="about__page__services">
+                        <div class="about__page__services__text">
+                            <p>앙상블 기법중 Boosting 알고리즘의 한 종류로,
+                                가중치를 부여한 약 분류기(Weak Classifier)를 모아서 강 분류기(Strong Classifier)를 생성하는 기법이다.
+                                복잡한 경계들을 활용해 훨씬 더 정확한 예측을 할 수 있게 된다.</p>
+                        </div>
                         <div class="row">
-                            <div style="vertical-align:center">
-                                <hr>
-                                <h3 style="text-align:center;color:#FA7A35">PR Curve Comparison</h3>
-                                <img src="{% static 'img/prcurve.png' %}">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-5.png' %}" alt="">
+                                    <h4>Parameter</h4>
+                                    <p>learning_rate=0.2<br>n_estimators=30</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-6.png' %}" alt="">
+                                    <h4>Feature</h4>
+                                    <p>1.약 분류기는 Stump형태이다.<br>2.Stump마다 가중치가 다를 수 있다.<br>
+                                        3.각 Stump의 error는 다음 Stump의 결과에 영향을 준다.</p>
+                                </div>
                             </div>
                             <div style="vertical-align:center">
                                 <hr>
-                                <h3 style="text-align:center;color:#FA7A35">F1 Score Comparison</h3><br>
-                                <img src="{% static 'img/fscore.png' %}">
+                                <h3 style="text-align:center;color:#FA7A35">Confusion Matrix</h3>
+                                <img src="{% static 'img/adamat.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">Classification Report</h3>
+                                <img src="{% static 'img/ada_report.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">PR Curve</h3>
+                                <img src="{% static 'img/ada_pr.png' %}">
                             </div>
 
                         </div>
