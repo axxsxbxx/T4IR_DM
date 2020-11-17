@@ -35,7 +35,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__logo">
-            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+            <a href="/welcome/"><img src="{% static 'img/logo.png' %}" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
     </div>
@@ -53,9 +53,9 @@
                 <div class="col-lg-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="/welcome/">Home</a></li>
+                            <li><a href="/welcome/">Home</a></li>
                             <li><a href="/contents/about/">About</a></li>
-                            <li><a href="/contents/model/">Model</a>
+                            <li class="active"><a href="/contents/model/">Model</a>
                                 <ul class="dropdown">
                                     <li><a href="/contents/logistic/">Logistic Regression</a></li>
                                     <li><a href="/contents/knn/">KNN</a></li>
@@ -83,61 +83,78 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__items set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
-                <div class="hero__text">
-                    <h2>Data is the best</h2>
-                </div>
-            </div>
-            <div class="hero__items set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
-                <div class="hero__text">
-                    <h2>Data is the power</h2>
-                </div>
-            </div>
-            <div class="hero__items set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
-                <div class="hero__text">
-                    <h2>We are the best</h2>
-                </div>
-            </div>
-        </div>
-        <div class="slide-num" id="snh-1"></div>
-        <div class="slider__progress"><span></span></div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- About Section Begin -->
-    <section class="about spad">
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg' %}">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="about__text">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>ADA Boost</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- About Page Section Begin -->
+    <section class="about-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="about__text about__page__text">
                         <div class="section-title">
-                            <span>Introduce</span>
-                            <h2>Motivation for encountering topic</h2>
-                        </div>
-                        <div class="about__para__text">
-                            <p>누구나 통신사에서 프로모션 전화 받은 경험이 있을 것입니다.</p>
-                            <p> 할부가 거의 끝나가는 시기에 받은 프로모션 전화에 대해서 궁금증을 가지게 되었습니다.
-                                이 경험을 통해 계약기간이 만료되거나
-                                통신사를 이탈할 수 있는 고객에게 선별적으로 전화한다는 것을 알게 되었습니다.</p>
-                            <p> 이러한 궁금증을 바탕으로 통신사 고객 데이터 분석을 통해 이탈율 예측과
-                                마케팅 전략방안을 세워보았습니다.</p>
+                            <span>Model 4</span>
+                            <h2>ADA Boost</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="about__pic">
-                        <div class="about__pic__inner">
-                            <img src="{% static 'img/about-pic.jpg' %}" alt="">
+                <div class="col-lg-8 col-md-8">
+                    <div class="about__page__services">
+                        <div class="about__page__services__text">
+                            <p>앙상블 기법중 Boosting 알고리즘의 한 종류로,
+                                가중치를 부여한 약 분류기(Weak Classifier)를 모아서 강 분류기(Strong Classifier)를 생성하는 기법이다.
+                                복잡한 경계들을 활용해 훨씬 더 정확한 예측을 할 수 있게 된다.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-5.png' %}" alt="">
+                                    <h4>Parameter</h4>
+                                    <p>learning_rate=0.2<br>n_estimators=30</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="{% static 'img/services/services-6.png' %}" alt="">
+                                    <h4>Feature</h4>
+                                    <p>1.약 분류기는 Stump형태이다.<br>2.Stump마다 가중치가 다를 수 있다.<br>
+                                        3.각 Stump의 error는 다음 Stump의 결과에 영향을 준다.</p>
+                                </div>
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">Confusion Matrix</h3>
+                                <img src="{% static 'img/adamat.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">Classification Report</h3>
+                                <img src="{% static 'img/ada_report.png' %}">
+                            </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">PR Curve</h3>
+                                <img src="{% static 'img/ada_pr.png' %}">
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- About Section End -->
+    <!-- About Page Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">

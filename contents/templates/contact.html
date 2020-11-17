@@ -57,14 +57,14 @@
                             <li><a href="/contents/about/">About</a></li>
                             <li><a href="/contents/model/">Model</a>
                                 <ul class="dropdown">
-                                    <li><a href="./Project-details.html">Logistic Regression</a></li>
-                                    <li><a href="./about.html">KNN</a></li>
-                                    <li><a href="./services.html">Random Forest</a></li>
-                                    <li><a href="./blog-details.html">ADA Boost</a></li>
-                                    <li><a href="./blog-details.html">XGBoost</a></li>
+                                    <li><a href="/contents/logistic/">Logistic Regression</a></li>
+                                    <li><a href="/contents/knn/">KNN</a></li>
+                                    <li><a href="/contents/randomforest/">Random Forest</a></li>
+                                    <li><a href="/contents/ada/">ADA Boost</a></li>
+                                    <li><a href="/contents/xgb/">XGBoost</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Result</a>
+                            <li><a href="#">Apply</a>
                                 <ul class="dropdown">
                                     <li><a href="/contents/group1/">Group1</a></li>
                                     <li><a href="/contents/group2/">Group2</a></li>
@@ -83,10 +83,10 @@
     </header>
     <!-- Header Section End -->
 
-    <section class="testimonial spad set-bg" data-setbg="{% static 'img/testimonial/testimonial-bg.jpg' %}">
+    <section class="team spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-9 col-md-8 col-sm-6">
                     <div class="section-title">
                         <span>Data.M</span>
                         <h2>Introduce Our Team</h2>
@@ -94,55 +94,123 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/jh.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">조제형</h5>
+                                <span>Team Leader</span>
+                            </div>
+                            <p>데이터셋 EDA<br>
+                                ADAboost 분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                마케팅 전략 분석 및 방안 제시<br>
+                                ppt 제작 및 발표</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/sh.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">심소희</h5>
+                                <span>Team member</span>
+                            </div>
+                            <p>로지스틱 회귀분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                ppt 제작</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/sb.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">안수빈</h5>
+                                <span>Team member</span>
+                            </div>
+                            <p>데이터셋 EDA<br>
+                                프로젝트 일정 수립<br>
+                                랜덤포레스트, KNN 분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                웹 페이지 제작</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/yh.png' %}">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5 style="color:orange">홍연하</h5>
+                                <span>Team member</span>
+                            </div>
+                            <p>XGBoost 분석 및 알고리즘 모델링<br>
+                                데이터 시각화<br>
+                                웹 페이지 제작<br>
+                                오류 테스트</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial spad set-bg" data-setbg="{% static 'img/testimonial/testimonial-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="testimonial__carousel">
                         <div class="testimonial__item">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-xl-9 col-lg-10">
-                                    <p>“1. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
+                                    <p><h3>2020.10.26 - 2020.11.17</h3></p>
+                                    <p><h4>PYTHON 기반 데이터 분석 프로젝트</h4></p>
+                                    <img src="{% static 'img/happy.jpg' %}" style="margin:5% 10%">
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial__item">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-xl-9 col-lg-10">
-                                    <p>“2. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
+                                    <p>“파이썬 전공발표 마케팅 데이터분석 프로젝트를 진행했다. 주제선정부터 전처리, 분석, 시각화,
+                                        결과물에 대한 해석, 인사이트 도출, 실전에 적용하는 등 기업에서 실제로 진행할 데이터분석을
+                                        우리가 할 수 있는 범위 내에서 진행했다. 잘하고 싶었던 생각도 있고 누구보다 좋은 결과물을 내고 싶었다.
+                                        그래서 더욱 집중해서 프로젝트를 진행한 결과 의미있는 분석을 진행했다고 생각한다.
+                                        그 안에는 팀원들의 큰 도움이 있었다. 각자 역할 수행을 잘 진행해주었고 나보다 더 열정적으로 참여해서
+                                        도와주었기에 팀장인 내가 수월하게 팀프로젝트를 진행할 수 있었다고 생각한다.
+                                        이번 프로젝트를 통해 협업을 배웠고 데이터분석 능력을 한 단계 더 키웠다고 생각한다.”</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial__item">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-xl-9 col-lg-10">
-                                    <p>“3. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
+                                    <p>“비대면으로 바뀌어서 과연 프로젝트를 잘 해낼 수 있을까 싶었는데 적극적으로 일이 진행되어서 다행이었다.
+                                        머신러닝 구현이 마냥 해내지 못 할 일이라 생각했는데 마무리를 지었다는게 신기하다.
+                                        데이터 머신이라는 팀명 답게 분석을 잘 해낸 것 같다.
+                                        많은 참여도 못하는 상황에 열심히 도와준 3조 팀원들에게 고맙다. 하드캐리했던 팀장님도 감사합니다!”</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial__item">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-xl-9 col-lg-10">
-                                    <p>“4. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
+                                    <p>“이번 프로젝트를 여러 분석 모델들을 공부하고 사용하면서 특성을 배울 수 있었다.
+                                        통계학 지식이 부족한 편이라 걱정은 했지만 팀원들의 도움으로 잘 마무리할 수 있었다.
+                                        온라인과 오프라인을 번갈아가면서 프로젝트를 진행했었는데, 생각했던 것 보다는 수월하게 진행되었다.
+                                        EDA부터 분석까지 모두 해보는 프로젝트는 처음이라 미숙하기도 했지만 재밌었다.
+                                        아쉬웠던 점은 우리나라의 통신사 고객에 대한 데이터를 구하지 못했던 것이다.
+                                        데이터가 구해졌다면 좀 더 개인적인 경험들을 기반으로 분석을 진행할 수 있었을 것 같다. ”</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial__item">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-lg-9">
-                                    <p>“5. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                    analysis.”</p>
+                                    <p>“프로젝트를 통해 전처리부터 분석까지 경험하면서 다양한 분석 기법들을 알게 되었다.
+                                        한 가지 데이터로 다양한 결과를 볼 수 있는 것과 들어보니만 했던 분석 기법들을 직접 사용해본 점이 재미있었다.
+                                        국내 통신사 데이터를 활용하지 못한 점이 아쉽지만, 이주 정도의 기간 동안 열심히 소통하며
+                                        도와준 팀원들에게 고맙다.”</p>
                                 </div>
                             </div>
                         </div>
@@ -154,139 +222,42 @@
                     <div class="testimonial__client">
                         <div class="testimonial__client__item add">
                             <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-1.png' %}" alt="">
+                                <img src="{% static 'img/testimonial/logo.png' %}" alt="">
                             </div>
                             <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
+                                <h5>Data.M</h5>
                             </div>
                         </div>
                         <div class="testimonial__client__item">
                             <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-2.png' %}" alt="">
+                                <img src="{% static 'img/testimonial/jh.png' %}" alt="">
                             </div>
                             <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
+                                <h5>조제형</h5>
                             </div>
                         </div>
                         <div class="testimonial__client__item">
                             <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-3.png' %}" alt="">
+                                <img src="{% static 'img/testimonial/sh.png' %}" alt="">
                             </div>
                             <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
+                                <h5>심소희</h5>
                             </div>
                         </div>
                         <div class="testimonial__client__item">
                             <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-4.png' %}" alt="">
+                                <img src="{% static 'img/testimonial/sb.png' %}" alt="">
                             </div>
                             <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
+                                <h5>안수빈</h5>
                             </div>
                         </div>
                         <div class="testimonial__client__item">
                             <div class="testimonial__client__pic">
-                                <img src="{% static 'img/testimonial/ta-5.png' %}" alt="">
+                                <img src="{% static 'img/testimonial/yh.png' %}" alt="">
                             </div>
                             <div class="testimonial__client__text">
-                                <h5>Renee Calhoun</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="logo__carousel owl-carousel">
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-1.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-2.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-3.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-4.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-5.png' %}" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{% static 'img/logo/logo-3.png' %}" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-6">
-                    <div class="section-title">
-                        <span>Our Team</span>
-                        <h2>Meet our team</h2>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn normal-btn">View All</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="{% static 'img/team/team-1.jpg' %}">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Dolores Webster</h5>
-                                <span>CEO & Founder</span>
-                            </div>
-                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
-                            ultricies nisl sit amet.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="{% static 'img/team/team-2.jpg' %}">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Dana Vaughn</h5>
-                                <span>Architect</span>
-                            </div>
-                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
-                            ultricies nisl sit amet.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="{% static 'img/team/team-3.jpg' %}">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Jonathan Mcdaniel</h5>
-                                <span>Architect</span>
-                            </div>
-                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
-                            ultricies nisl sit amet.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <h5>홍연하</h5>
                             </div>
                         </div>
                     </div>
@@ -294,79 +265,10 @@
             </div>
         </div>
     </section>
+
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
         <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6">
-                        <div class="footer__top__text">
-                            <h2>Ready To Work With Us?</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer__top__newslatter">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email...">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer__about">
-                        <div class="footer__logo">
-                            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
-                        </div>
-                        <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
-                        <ul>
-                            <li>Info.colorlib@gmail.com</li>
-                            <li>+84 123 456 789</li>
-                        </ul>
-                        <div class="footer__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Company</h6>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Our Works</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">FAQs</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Services</h6>
-                        <ul>
-                            <li><a href="#">Architecture</a></li>
-                            <li><a href="#">Interior Design</a></li>
-                            <li><a href="#">Exterior Design</a></li>
-                            <li><a href="#">Planning</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
-                        <h6>Get In Touch</h6>
-                        <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
-                        <ul>
-                            <li>Info.colorlib@gmail.com</li>
-                            <li>+84 123 456 789</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div class="copyright">
                 <div class="row">
                     <div class="col-lg-8 col-md-7">
@@ -377,18 +279,18 @@
                             aria-hidden="true"></i> by <a href="https://colorlib.com"
                             target="_blank">Colorlib</a>
                         </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="copyright__widget">
-                        <a href="#">Terms of use</a>
-                        <a href="#">Privacy Policy</a>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="copyright__widget">
+                            <a href="#">Terms of use</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 <!-- Footer Section End -->
 
 <!-- Js Plugins -->

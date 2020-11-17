@@ -57,14 +57,14 @@
                             <li><a href="/contents/about/">About</a></li>
                             <li class="active"><a href="/contents/model/">Model</a>
                                 <ul class="dropdown">
-                                    <li><a href="./Project-details.html">Logistic Regression</a></li>
-                                    <li><a href="./about.html">KNN</a></li>
-                                    <li><a href="/contents/model/">Random Forest</a></li>
-                                    <li><a href="./blog-details.html">ADA Boost</a></li>
-                                    <li><a href="./blog-details.html">XGBoost</a></li>
+                                    <li><a href="/contents/logistic/">Logistic Regression</a></li>
+                                    <li><a href="/contents/knn/">KNN</a></li>
+                                    <li><a href="/contents/randomforest/">Random Forest</a></li>
+                                    <li><a href="/contents/ada/">ADA Boost</a></li>
+                                    <li><a href="/contents/xgb/">XGBoost</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Result</a>
+                            <li><a href="#">Apply</a>
                                 <ul class="dropdown">
                                     <li><a href="/contents/group1/">Group1</a></li>
                                     <li><a href="/contents/group2/">Group2</a></li>
@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Random Forest</h2>
+                        <h2>Final Model</h2>
                     </div>
                 </div>
             </div>
@@ -104,38 +104,25 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="about__text about__page__text">
                         <div class="section-title">
-                            <span>Model 3</span>
-                            <h2>Random Forest</h2>
-                        </div>
-                        <div class="about__para__text">
-                            <p>As you might expect of a company that began as a high-end interiors contractor.</p>
+                            <span>Final Model</span>
+                            <h2>XGBoost</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
                     <div class="about__page__services">
-                        <div class="about__page__services__text">
-                            <p>랜덤 포레스트는 대표적인 bagging 모델으로, 여러개의 결정 트리들을 랜덤하게 학습시켜 결과 도출에 사용한다.
-                            모델 내부에 트리를 만들기 위해서 중복을 허용한 샘플(부트스트랩 샘플)들을 생성한다.</p>
-                        </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="services__item">
-                                    <img src="{% static 'img/services/services-5.png' %}" alt="">
-                                    <h4>Target</h4>
-                                    <p>As you might expect of a company that began as a high-end interiors contractor,
-                                    we pay strict attention. Anisotropic elements that randomly sample.</p>
-                                </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">PR Curve Comparison</h3>
+                                <img src="{% static 'img/prcurve.png' %}">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="services__item">
-                                    <img src="{% static 'img/services/services-6.png' %}" alt="">
-                                    <h4>Feature</h4>
-                                    <p>Our commitment to exceptional quality has never wavered. To day ranks as one of
-                                        the most highly-regarded construction. Anisotropic elements that randomly
-                                    sample.</p>
-                                </div>
+                            <div style="vertical-align:center">
+                                <hr>
+                                <h3 style="text-align:center;color:#FA7A35">F1 Score Comparison</h3><br>
+                                <img src="{% static 'img/fscore.png' %}">
                             </div>
+
                         </div>
                     </div>
                 </div>
